@@ -1,10 +1,12 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
+import {useRef} from 'react';
 import {
   NavigationContainer,
   useNavigationContainerRef,
 } from '@react-navigation/native';
 import {Private} from './partials/private';
 import {Public} from './partials/public';
+import {useUserStore} from '../../store/useUserStore';
 
 const config = {
   screens: {},
@@ -16,13 +18,10 @@ const linking = {
 };
 
 export const Router = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigationRef = useNavigationContainerRef();
   const routeNameRef = useRef<string>();
 
-  useEffect(() => {
-    setIsLoggedIn(true);
-  }, []);
+  const isLoggedIn = useUserStore(state => state.isLoggedIn);
 
   return (
     <NavigationContainer
