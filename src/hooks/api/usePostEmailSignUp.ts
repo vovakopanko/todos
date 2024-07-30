@@ -43,17 +43,16 @@ export const usePostEmailSignUp = () => {
         last_name,
       });
       if (resp.status === 201) {
-        console.log('Resp', resp.data);
         const data = await accountServices.emailSignIn({email, password});
         await AsyncStorage.setItem(STORAGE_KEYS.ACCESS_TOKEN, data.data.access);
-        setUser({user: resp.data.first_name, isLoggedIn: true});
+        await AsyncStorage.setItem(
+          STORAGE_KEYS.REFRESH_TOKEN,
+          data.data.refresh,
+        );
         setUser({
-          user: {
-            first_name: resp.data.first_name,
-            last_name: resp.data.last_name,
-            email: resp.data.email,
-          },
-          isLoggedIn: true,
+          first_name: resp.data.first_name,
+          last_name: resp.data.last_name,
+          email: resp.data.email,
         });
       }
     } catch (e) {
