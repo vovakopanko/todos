@@ -22,6 +22,7 @@ const axios = Axios.create({
     Accept: 'application/json',
     'Content-type': 'application/json',
     Connection: 'close',
+    'Keep-Alive': 'timeout=30, max=100',
   },
 });
 
@@ -29,7 +30,7 @@ axios.interceptors.request.use(
   async config => {
     const token = await AsyncStorage.getItem(STORAGE_KEYS.ACCESS_TOKEN);
 
-    if (config.headers) {
+    if (token && config.headers) {
       config.headers.Authorization = `Bearer ${token}`;
       config.headers.Accept = 'application/json';
     }
@@ -48,7 +49,7 @@ export type TokenRefresh = {
 
 export const refreshTokenRequest = async (refresh: TokenRefresh) => {
   try {
-    const res = await axios.post<TokenRefresh>('/token/refresh/', {
+    const res = await axios.post<TokenRefresh>('/token/refresh', {
       refresh,
     });
     return res.data.access;
@@ -82,6 +83,7 @@ axios.interceptors.response.use(
   },
   async error => {
     const originalRequest = error.config;
+
     if (error.response.status === 401 && !originalRequest._retry) {
       useUserStore.getState().clearUser();
       await AsyncStorage.setItem(STORAGE_KEYS.ACCESS_TOKEN, '');
