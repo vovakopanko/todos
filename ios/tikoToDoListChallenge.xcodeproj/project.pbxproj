@@ -13,16 +13,16 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		26DA484E109E504C34C75ADC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 028A849E02508684BC635695 /* PrivacyInfo.xcprivacy */; };
-		7699B88040F8A987B510C191 /* libPods-tikoToDoListChallenge-tikoToDoListChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-tikoToDoListChallenge-tikoToDoListChallengeTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		6FDEA62C9FC5486E9EA1D254 /* Figtree-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9E719CC084555B53B0333 /* Figtree-Black.ttf */; };
-		DA082C3C2FC34FC79ED71D6E /* Figtree-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 313BDB2E5C2046708B1ABA10 /* Figtree-Bold.ttf */; };
-		5CB6E815BA39452EAE876583 /* Figtree-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 641C007F19364D099BDD8516 /* Figtree-ExtraBold.ttf */; };
 		561DAB3586584964B0BC6B52 /* Figtree-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0628BF9328844EA0A1B5F5DF /* Figtree-Italic.ttf */; };
-		EDBD66E0DCF647B0962E7566 /* Figtree-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCF7CF16CBE94AFA8269D7F3 /* Figtree-Light.ttf */; };
-		CDFAF60347874FC58B4E6F0D /* Figtree-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16DBAFE2E1CA4AD2BF509396 /* Figtree-Medium.ttf */; };
+		5CB6E815BA39452EAE876583 /* Figtree-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 641C007F19364D099BDD8516 /* Figtree-ExtraBold.ttf */; };
 		6421F6C147FB43FEAC7FADF9 /* Figtree-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E75E5865E5442CDB963C60E /* Figtree-Regular.ttf */; };
+		6FDEA62C9FC5486E9EA1D254 /* Figtree-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AF9E719CC084555B53B0333 /* Figtree-Black.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-tikoToDoListChallenge-tikoToDoListChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-tikoToDoListChallenge-tikoToDoListChallengeTests.a */; };
 		790DEA907C654B12BC423B77 /* Figtree-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA10301146CF4F03ADDFECE0 /* Figtree-SemiBold.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CDFAF60347874FC58B4E6F0D /* Figtree-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16DBAFE2E1CA4AD2BF509396 /* Figtree-Medium.ttf */; };
+		DA082C3C2FC34FC79ED71D6E /* Figtree-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 313BDB2E5C2046708B1ABA10 /* Figtree-Bold.ttf */; };
+		EDBD66E0DCF647B0962E7566 /* Figtree-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCF7CF16CBE94AFA8269D7F3 /* Figtree-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* tikoToDoListChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tikoToDoListChallengeTests.m; sourceTree = "<group>"; };
 		028A849E02508684BC635695 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = tikoToDoListChallenge/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		0628BF9328844EA0A1B5F5DF /* Figtree-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-Italic.ttf"; path = "../src/assets/fonts/Figtree-Italic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* tikoToDoListChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tikoToDoListChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = tikoToDoListChallenge/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = tikoToDoListChallenge/AppDelegate.mm; sourceTree = "<group>"; };
@@ -47,22 +48,21 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = tikoToDoListChallenge/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = tikoToDoListChallenge/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = tikoToDoListChallenge/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		16DBAFE2E1CA4AD2BF509396 /* Figtree-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-Medium.ttf"; path = "../src/assets/fonts/Figtree-Medium.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-tikoToDoListChallenge-tikoToDoListChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tikoToDoListChallenge-tikoToDoListChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		313BDB2E5C2046708B1ABA10 /* Figtree-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-Bold.ttf"; path = "../src/assets/fonts/Figtree-Bold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-tikoToDoListChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tikoToDoListChallenge.debug.xcconfig"; path = "Target Support Files/Pods-tikoToDoListChallenge/Pods-tikoToDoListChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		4AF9E719CC084555B53B0333 /* Figtree-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-Black.ttf"; path = "../src/assets/fonts/Figtree-Black.ttf"; sourceTree = "<group>"; };
+		4E75E5865E5442CDB963C60E /* Figtree-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-Regular.ttf"; path = "../src/assets/fonts/Figtree-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-tikoToDoListChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tikoToDoListChallenge.release.xcconfig"; path = "Target Support Files/Pods-tikoToDoListChallenge/Pods-tikoToDoListChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-tikoToDoListChallenge-tikoToDoListChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tikoToDoListChallenge-tikoToDoListChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-tikoToDoListChallenge-tikoToDoListChallengeTests/Pods-tikoToDoListChallenge-tikoToDoListChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-tikoToDoListChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tikoToDoListChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		641C007F19364D099BDD8516 /* Figtree-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-ExtraBold.ttf"; path = "../src/assets/fonts/Figtree-ExtraBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = tikoToDoListChallenge/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-tikoToDoListChallenge-tikoToDoListChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tikoToDoListChallenge-tikoToDoListChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-tikoToDoListChallenge-tikoToDoListChallengeTests/Pods-tikoToDoListChallenge-tikoToDoListChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA10301146CF4F03ADDFECE0 /* Figtree-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-SemiBold.ttf"; path = "../src/assets/fonts/Figtree-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		4AF9E719CC084555B53B0333 /* Figtree-Black.ttf */ = {isa = PBXFileReference; name = "Figtree-Black.ttf"; path = "../src/assets/fonts/Figtree-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		313BDB2E5C2046708B1ABA10 /* Figtree-Bold.ttf */ = {isa = PBXFileReference; name = "Figtree-Bold.ttf"; path = "../src/assets/fonts/Figtree-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		641C007F19364D099BDD8516 /* Figtree-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Figtree-ExtraBold.ttf"; path = "../src/assets/fonts/Figtree-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0628BF9328844EA0A1B5F5DF /* Figtree-Italic.ttf */ = {isa = PBXFileReference; name = "Figtree-Italic.ttf"; path = "../src/assets/fonts/Figtree-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FCF7CF16CBE94AFA8269D7F3 /* Figtree-Light.ttf */ = {isa = PBXFileReference; name = "Figtree-Light.ttf"; path = "../src/assets/fonts/Figtree-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		16DBAFE2E1CA4AD2BF509396 /* Figtree-Medium.ttf */ = {isa = PBXFileReference; name = "Figtree-Medium.ttf"; path = "../src/assets/fonts/Figtree-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4E75E5865E5442CDB963C60E /* Figtree-Regular.ttf */ = {isa = PBXFileReference; name = "Figtree-Regular.ttf"; path = "../src/assets/fonts/Figtree-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BA10301146CF4F03ADDFECE0 /* Figtree-SemiBold.ttf */ = {isa = PBXFileReference; name = "Figtree-SemiBold.ttf"; path = "../src/assets/fonts/Figtree-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FCF7CF16CBE94AFA8269D7F3 /* Figtree-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Figtree-Light.ttf"; path = "../src/assets/fonts/Figtree-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 			sourceTree = "<group>";
 		};
 		E12B76D147EC40D78D4F8058 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				4AF9E719CC084555B53B0333 /* Figtree-Black.ttf */,
 				313BDB2E5C2046708B1ABA10 /* Figtree-Bold.ttf */,
@@ -183,8 +183,8 @@
 				BA10301146CF4F03ADDFECE0 /* Figtree-SemiBold.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -631,7 +631,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -703,7 +706,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

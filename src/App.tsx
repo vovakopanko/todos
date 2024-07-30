@@ -12,6 +12,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {COLORS} from './constants';
+import {useIsActiveSession} from './hooks/useIsActiveSession';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -20,6 +21,8 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
     flex: 1,
   };
+
+  useIsActiveSession();
 
   return (
     <GestureHandlerRootView style={styles.fullScreen}>
