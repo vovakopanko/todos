@@ -20,14 +20,11 @@ export const usePostEmailSignIn = () => {
     try {
       const data = await accountServices.emailSignIn({email, password});
       await AsyncStorage.setItem(STORAGE_KEYS.ACCESS_TOKEN, data.data.access);
-
+      await AsyncStorage.setItem(STORAGE_KEYS.REFRESH_TOKEN, data.data.refresh);
       setUser({
-        user: {
-          firstName: 'Not_Data',
-          lastName: 'Not_Data',
-          email: 'Not_Data@gmail.com',
-        },
-        isLoggedIn: true,
+        first_name: 'Not_Data',
+        last_name: 'Not_Data',
+        email: 'Not_Data@gmail.com',
       });
     } catch (e) {
       if (isAxiosError(e)) {

@@ -13,6 +13,8 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {COLORS} from './constants';
 import {useIsActiveSession} from './hooks/useIsActiveSession';
+import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
+import {PortalProvider} from '@gorhom/portal';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,13 +28,17 @@ function App(): React.JSX.Element {
 
   return (
     <GestureHandlerRootView style={styles.fullScreen}>
-      <SafeAreaProvider>
-        <StatusBar
-          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-          backgroundColor={backgroundStyle.backgroundColor}
-        />
-        <Router />
-      </SafeAreaProvider>
+      <PortalProvider>
+        <SafeAreaProvider>
+          <StatusBar
+            barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+            backgroundColor={backgroundStyle.backgroundColor}
+          />
+          <BottomSheetModalProvider>
+            <Router />
+          </BottomSheetModalProvider>
+        </SafeAreaProvider>
+      </PortalProvider>
     </GestureHandlerRootView>
   );
 }

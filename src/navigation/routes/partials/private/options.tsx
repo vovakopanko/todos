@@ -5,6 +5,7 @@ import {BottomTabNavigatorParamList, TabBarOptionsProps} from '../../../types';
 import {getTabBarIcon, tabBarName} from '../../../utils';
 import {BottomTabNavigationOptions} from '@react-navigation/bottom-tabs';
 import {Text} from '../../../../components/text';
+import {COLORS} from '../../../../constants';
 
 export const tabBarHeaderOptions = {
   headerShown: false,
@@ -12,12 +13,18 @@ export const tabBarHeaderOptions = {
 
 interface IconWrapperProps extends ViewProps {
   route?: RouteProp<BottomTabNavigatorParamList>;
+  focused: boolean;
 }
 
-const IconWrapper = ({route, children}: IconWrapperProps) => (
+const IconWrapper = ({route, children, focused}: IconWrapperProps) => (
   <>
     {children}
-    <Text fontWeight={500} style={styles.tabBarLabel}>
+    <Text
+      fontWeight={500}
+      style={[
+        styles.tabBarLabel,
+        {color: focused ? COLORS.MAIN : COLORS.BLACK},
+      ]}>
       {route ? tabBarName[route.name] : ''}
     </Text>
   </>
@@ -37,11 +44,11 @@ export const tabNavigatorOptions = ({
     borderTopWidth: 0,
     elevation: 0,
   },
-  tabBarIcon: () => {
+  tabBarIcon: ({focused}) => {
     const {Icon} = getTabBarIcon(route);
     return (
-      <IconWrapper route={route}>
-        <Icon />
+      <IconWrapper route={route} focused={focused}>
+        <Icon color={focused ? COLORS.MAIN : COLORS.BLACK} />
       </IconWrapper>
     );
   },
