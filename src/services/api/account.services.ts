@@ -1,3 +1,4 @@
+import {AxiosResponse} from 'axios';
 import {axios} from '.';
 
 export type EmailSignIn = {
@@ -13,9 +14,23 @@ export type EmailSignUp = {
   last_name: string;
 };
 
+type ResponseSignUp = {
+  email: string;
+  first_name: string;
+  last_name: string;
+};
+
+type ResponseSignIn = {
+  access: string;
+  refresh: string;
+};
+
 class AccountService {
-  async emailSignIn({email, password}: EmailSignIn) {
-    return axios.post('/login', {
+  async emailSignIn({
+    email,
+    password,
+  }: EmailSignIn): Promise<AxiosResponse<ResponseSignIn>> {
+    return axios.post('/login/', {
       email,
       password,
     });
@@ -27,8 +42,8 @@ class AccountService {
     password2,
     first_name,
     last_name,
-  }: EmailSignUp) {
-    return axios.post('/register', {
+  }: EmailSignUp): Promise<AxiosResponse<ResponseSignUp>> {
+    return axios.post('/register/', {
       email,
       password,
       password2,

@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity} from 'react-native';
 import {HeaderOptionsProps} from '../../navigation/types';
-import {ArrowIcon} from '../../assets/common';
+import {ArrowIcon} from '../../assets/icons/common';
 
 export const BackButton = ({navigation}: HeaderOptionsProps) =>
   navigation.canGoBack() ? (
