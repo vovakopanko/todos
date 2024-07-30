@@ -1,15 +1,31 @@
 import {create} from 'zustand';
 
+type userData = {
+  first_name: string;
+  last_name: string;
+  email: string;
+};
 interface UserState {
-  user: unknown | null;
+  firstName: unknown | null;
+  lastName: unknown | null;
+  email: unknown | null;
   isLoggedIn: boolean;
-  setUser: (user: unknown) => void;
+  setUser: (user: userData) => void;
   clearUser: () => void;
 }
 
 export const useUserStore = create<UserState>(set => ({
-  user: null,
+  firstName: null,
+  lastName: null,
+  email: null,
   isLoggedIn: false,
-  setUser: user => set({user, isLoggedIn: true}),
-  clearUser: () => set({user: null, isLoggedIn: false}),
+  setUser: data =>
+    set({
+      firstName: data.first_name,
+      lastName: data.last_name,
+      email: data.email,
+      isLoggedIn: true,
+    }),
+  clearUser: () =>
+    set({firstName: null, lastName: null, email: null, isLoggedIn: false}),
 }));
